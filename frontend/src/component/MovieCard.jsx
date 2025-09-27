@@ -5,7 +5,7 @@ const MovieCard = ({movie:{title,poster_path,release_date,vote_average,original_
         headers: {accept: "application/json","Content-Type": "application/json"},
         body: JSON.stringify({id: id, title: title, poster:poster_path})};   
 
-        const response = await fetch('http://localhost:3002/api/trendingMovies',API_OPTION);
+        const response = await fetch('https://mern-stack-movie-app-with-working-finding-trendi-production.up.railway.app/api/trendingMovies',API_OPTION);
         const data =  await response.json();
         console.log(data.message);
     };

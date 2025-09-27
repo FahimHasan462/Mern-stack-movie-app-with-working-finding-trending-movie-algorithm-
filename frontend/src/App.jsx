@@ -62,7 +62,7 @@ const [trendingMovies,setTrendingMovies]=useState([])
 useEffect(() => {
     const fetchTrendingMovies = async () => {
       try {
-        const response = await fetch("http://localhost:3002/api/trendingMovies");
+        const response = await fetch("https://mern-stack-movie-app-with-working-finding-trendi-production.up.railway.app/api/trendingMovies");
         const data = await response.json();
         setTrendingMovies(data);   
         console.log(trendingMovies)    
