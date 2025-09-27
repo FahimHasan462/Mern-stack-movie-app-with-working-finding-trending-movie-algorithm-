@@ -8,7 +8,7 @@ const PORT=3002;
 // middlewere
 
 app.use(cors({
-  origin: "https://mern-stack-movie-app-with-working-finding-trending-ocf5kngcg.vercel.app", // frontend URL
+  origin: "mern-stack-movie-app-with-working-f-five.vercel.app", // frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
 }));
 app.use(json()); 
