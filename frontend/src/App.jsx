@@ -72,7 +72,7 @@ useEffect(() => {
     };
 
     fetchTrendingMovies();
-  }, [trendingMovies]);
+  }, []);
 
 
   return (
