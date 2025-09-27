@@ -1,10 +1,13 @@
 import { createConnection } from 'mysql2';
+import dotenv from "dotenv";
 
+dotenv.config();
 const db = createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "movieapp"
+  host: process.env.MYSQLHOST,      
+  user: process.env.MYSQLUSER,      
+  password: process.env.MYSQLPASSWORD, 
+  database: process.env.MYSQLDATABASE,   
+  port: process.env.MYSQLPORT 
 });
 
 // Connect and log status
