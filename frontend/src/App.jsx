@@ -64,8 +64,7 @@ useEffect(() => {
       try {
         const response = await fetch("https://mern-stack-movie-app-with-working-finding-trendi-production.up.railway.app/api/trendingMovies");
         const data = await response.json();
-        setTrendingMovies(data);   
-        console.log(trendingMovies)    
+        setTrendingMovies(data);     
       } catch (error) {
         console.error("Error fetching movies:", error);
       }
